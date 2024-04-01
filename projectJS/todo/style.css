@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(179, 179, 187);
+}
+
+body {}
+
+
+#cntainer #title h1 {
+    text-align: center;
+    background-color: rgb(179, 179, 187);
+    color: aliceblue;
+    margin-top: 3em;
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+
+}
+
+.n2 {
+    background-color: rgb(63, 63, 70);
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.n {
+    margin: 0.2em;
+    background-color: rgb(63, 63, 70);
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.form {}
+
+#btn-add {
+    margin: 0.5em;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    width: 2%;
+    border-radius: 40%;
+}
+
+
+#input-name {
+    width: 30%;
+    border: 2px solid aliceblue;
+}
+
+#li-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+#box {}
+
+#input2 {
+    width: 70%;
+    height: 5vh;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    border: 1px solid aliceblue;
+}
+
+#todo-list {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+    #input-name {
+        width: 70%;
+    }
+
+    #input2 {
+        width: 50%;
+    }
+
+    #btn-add {
+        width: 8%;
+    }
+}

@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {
+        background-color: rgb(118, 112, 118);
+    }
+
+    to {
+        background-color: #3e3d3e;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 1em;
+    color: #ccc;
+    font-family: "Anta", sans-serif;
+    font-weight: 800;
+    color: #f2f1f4;
+}
+
+.calculator {
+
+    width: 380px;
+    height: 450px;
+    margin: 50px auto;
+    border: 1px solid #1f0e49;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #619fd4;
+    background-color: #1c2f40;
+    margin-top: 1em;
+}
+
+#display {
+    width: 100%;
+    height: 12%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    text-align: right;
+    font-size: 35px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    background-color: #1c2f40;
+    font-size: 60px;
+}
+
+button {
+    display: block;
+    font-size: 100%;
+    width: 95%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    color: #eee;
+    border: none;
+    background-color: #333;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.50, rgb(5, 5, 5)), color-stop(0.50, rgb(71, 71, 71)));
+    background: -moz-linear-gradient(center bottom, rgb(5, 5, 5) 50%, rgb(71, 71, 71) 50%);
+    border: 1px solid #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+button:hover {
+    color: rgb(236, 169, 14);
+}
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 80%;
+    }
+    #display {
+        font-size: 20px;
+    }
+    .buttons {
+        font-size: 40px;
+    }
+    button {
+        font-size: 90%;
+    }
+}

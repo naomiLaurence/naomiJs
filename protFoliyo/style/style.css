@@ -1,0 +1,688 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(210, 204, 204);
+}
+
+div #container {
+    width: 100vw;
+    height: 20vh;
+}
+
+div nav {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+    width: 100%;
+
+}
+
+div nav a {
+    text-decoration: none;
+}
+
+div nav ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1em;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 515px;
+    background-color: rgb(229, 226, 226);
+}
+
+div nav ul li {
+    margin: 0 1em 0 1em;
+}
+
+div nav ul li:hover {
+    color: rgb(192, 15, 15);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+}
+
+.logo li {
+    margin-left: 0;
+}
+
+.picInLogo {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+section #main {
+    background-image: url(picOfMe.JPG);
+    background-position: top right;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 1em;
+    margin-top: 5em;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+    line-height: 1.5;
+}
+
+#container-title {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    margin-top: 4em;
+}
+
+#image {
+    width: 60%;
+    height: 70vh;
+    margin-right: 2em;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4em;
+}
+
+.girl {
+    width: 400px;
+
+}
+
+.girl:hover {
+    transform: translateX(-30%);
+    transition: 2s;
+    opacity: 0.8;
+}
+
+
+h1 {
+    font-size: 60px;
+    margin-top: 1.5em;
+
+}
+
+p #paragraph {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#title {
+    line-height: 1.6;
+    padding: 1.5em;
+}
+
+.ikon {
+    height: 10vh;
+    margin-bottom: 6.5em;
+}
+
+.ikon ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 1em;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+li #ikon-img {
+    width: 4vw;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+#ikon-img:hover {
+    box-shadow: 1px 1px 10px grey;
+}
+
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(205, 199, 199);
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: rgb(205, 199, 199);
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+
+#about {
+    text-align: center;
+    margin-top: 20px;
+    padding: 2em;
+    line-height: 1.5;
+    background-color: rgb(229, 226, 226);
+}
+
+
+#about img {
+    width: 200px;
+    height: 190px;
+}
+
+#about #paragraph {
+    text-align: center;
+}
+
+
+
+#gallery {
+    text-align: center;
+    padding: 2em;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+}
+
+#container-gallery {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.card,
+.gameJs {
+    box-shadow: 3px 3px 16px black;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 2em;
+}
+
+#bg-image1 {
+    background-image: url(../media/coffe.jpeg);
+    width: 100%;
+    height: 40%;
+background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image2 {
+    background-image: url(../media/letme.jpeg);
+    width: 100%;
+    height: 40%;
+background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image3 {
+    background-image: url(../media/letus.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image4 {
+    background-image: url(../media/here.jpeg);
+    width: 100%;
+    height: 40%;
+background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image5 {
+    background-image: url(../media/contact.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image6 {
+    background-image: url(../media/think.jpeg);
+    width: 100%;
+    height: 40%;
+background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+#bg-image7 {
+    background-image: url(../media/tictactoe.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.card p {
+    font-size: 8px;
+    margin: 0.5em;
+}
+
+
+
+#game {
+    text-align: center;
+    padding: 2em;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+}
+
+#container-game {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.gameJs {
+    box-shadow: 3px 3px 16px black;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 2em;
+}
+
+#bg-card1 {
+    background-image: url(../media/apiContry.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-card2 {
+    background-image: url(../media/calculator.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-card3 {
+    background-image: url(../media/memoryGame.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-card4 {
+    background-image: url(../media/snake.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-card5 {
+    background-image: url(../media/todoList.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-card6 {
+    background-image: url(../media/tictactoe.jpeg);
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+        background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+
+.card p {
+    font-size: 8px;
+    margin: 0.5em;
+}
+
+.gameJs p {
+    font-size: 8px;
+    margin: 0.5em;
+}
+
+a {
+    text-decoration: underline;
+
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(192, 15, 15);
+}
+
+#container-contact {
+    width: 99vw;
+    height: 85vh;
+    background-color: #fff;
+    color: #6b6774;
+    text-shadow: 1px 1px 2px #cb90a9;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#form {
+    width: 50vw;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15em;
+
+}
+
+#title-contact {
+    width: 87vw;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 2em;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+}
+
+.form-control {}
+
+.form-control label {
+    font-size: 12px;
+    color: #181717;
+
+}
+
+.form-control input {
+    width: 300px;
+    height: 30px;
+    border: 2px solid #8b7880;
+    border-radius: 8px;
+    border-radius: 8px;
+    border-bottom: 4px solid #6b6774;
+    background-color: #cdc0c6;
+}
+
+.form-control textarea {
+    height: 90px;
+    width: 50vw;
+    border: 2px solid #8b7880;
+    border-radius: 8px;
+    border-radius: 8px;
+    border-bottom: 4px solid #6b6774;
+    background-color: #cdc0c6;
+}
+
+
+.form-control .message {
+    height: 100px;
+    width: 70vw;
+}
+
+.form-control2 {
+    width: 70vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-control2 button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 5vh;
+    background: #cdc0c6;
+    border: 2px solid #8b7880;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #181717;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1em;
+
+}
+
+.form-control2 button:hover {
+    color: #cb90a9;
+}
+
+.form-control2 button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f9fdff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.form-control2 button:hover::before {
+    width: 100%;
+}
+
+#container-footer {
+    margin-top: auto;
+    display: flex;
+}
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(229, 226, 226);
+    font-family: 'Satisfy', cursive;
+    font-family: 'Zilla Slab', serif;
+    margin-top: 4em;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    padding: 1em;
+}
+
+@media screen and (max-width:1200px) {
+
+
+    #hamburger {
+        display: block;
+    }
+
+    input[type="checkbox"]:checked~.nav {
+        display: block;
+    }
+
+    nav ul {
+        height: 5%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    #image {
+        margin-top: 3em;
+        height: 30vh;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .girl {
+        width: 60%;
+        height: 30vh;
+        border-radius: 50%;
+        margin-bottom: 3em;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #paragraph {
+        font-size: 50%;
+        text-align: center;
+    }
+
+
+    #container-title {
+        flex-direction: column;
+        line-height: 1.5;
+    }
+
+    #title {
+        font-size: 30px;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .ikon {
+        display: none;
+    }
+
+    #container-contact {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    #form {
+        width: 50%;
+        justify-content: center;
+        margin-left: 7em;
+        margin: auto;
+    }
+
+
+    #title-contact {
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .form-control input {
+        width: 300px;
+        height: 40px;
+    }
+
+    #last-name-box {
+        display: none;
+    }
+
+    .form-control textarea {
+        height: 100px;
+        width: 300px;
+    }
+
+    .form-control2 {
+        width: 70vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
