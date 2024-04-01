@@ -1,0 +1,103 @@
+     * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+     }
+
+     body {
+         direction: rtl;
+         background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+         color: #fff;
+
+     }
+
+     section {
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     section h1 {
+         font: normal normal normal 160px/231px Satisfy;
+         text-align: center;
+
+     }
+
+     h2 {
+         font: normal normal normal 32px/38px Varela Round;
+         font-size: 32px;
+         margin: 10px;
+     }
+
+     p {
+         margin-top: 18px 0 0 18px;
+     }
+
+     .conteiner {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 50px;
+
+     }
+
+     input {
+         border: 1px solid #fff;
+         background: #F6F6F624 0% 0% no-repeat padding-box;
+         width: 180px;
+         height: 25px;
+     }
+
+     .control {
+         display: flex;
+         flex-direction: column;
+         flex-direction: center;
+         margin: 9px;
+     }
+
+     .control1 {
+         width: 180px;
+         height: 43px;
+         display: flex;
+         align-items: flex-end;
+     }
+
+     .button {
+         width: 125px;
+         color: #1C1C1C;
+         background-color: #FFFFFF;
+         font: normal normal normal 16px/20px Varela Round;
+         font-size: 12px
+     }
+
+     @media (max-width:576px) {
+
+         body {
+             width: 70vw;
+
+         }
+
+         .conteiner {
+             display: flex;
+             flex-direction: column;
+         }
+
+         section {}
+
+         section h1 {
+             font: normal normal normal 60px/86px Satisfy;
+         }
+
+         h2 {
+             font: normal normal normal 18px/22px Varela Round;
+         }
+
+         p {
+             font: normal normal normal 16px/20px Varela Round;
+             text-align: center;
+             margin: 55px;
+         }
+     }
