@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container-main {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../blue.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+
+.container-input {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    gap: 1em;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.control2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.control3 {
+    height: 9vh;
+    width: 10vw;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.submit {
+    width: 10vw;
+    height: 5vh;
+    border-bottom: none;
+    color: #011560;
+    background-color: #D3E10E;
+    font: normal normal bold 22px/30px Assistant;
+    font-size: 10px;
+}
+
+label {
+    font: normal normal bold 16px/21px Assistant;
+    font-size: 10px;
+}
+
+
+input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #D3E10E;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    height: 5vh;
+
+}
+
+
+
+
+h1 {
+    color: #D3E10E;
+    font: normal normal bold 86px/113px Assistant;
+    font-size: 40px;
+    width: 70vw;
+    height: 17vh;
+
+}
+
+p {
+
+    color: aliceblue;
+    width: 35vw;
+    font: normal normal normal 20px/26px Assistant;
+    font-size: 9px;
+
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .container-main {
+        background-image: none;
+        background-image: url(../Group.png);
+        height: 70vh;
+    }
+
+    .container-main h1 {
+        display: none;
+    }
+
+    .container-main p {
+        display: none;
+    }
+
+    .container-input {
+
+        flex-direction: column;
+    }
+
+    input {
+        width: 70vw;
+        height: 5vh;
+    }
+
+    .control3 {
+        width: 70vw;
+    }
+
+    .submit {
+        width: 100vw;
+        margin-bottom: 4em;
+    }
+
+}
