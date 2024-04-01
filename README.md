@@ -1,6 +1,6 @@
-Project Name: Html & Css.
+Project Name: Html, Css, Js.
 
-Description: The purpose of the project is mainly to show the tasks that were required of me in HTML CSS  .
+Description: The purpose of the project is mainly to show the tasks that were required of me in HTML CSS Js .
 
 Installation: For this project I installed Visual Studio Code and opened HTML and CSS files there.
 
