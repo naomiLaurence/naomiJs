@@ -7,7 +7,6 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     font-family: 'Satisfy', cursive;
     font-family: 'Zilla Slab', serif;
     background-color: rgb(210, 204, 204);
